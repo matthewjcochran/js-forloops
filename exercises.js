@@ -11,6 +11,10 @@ Write a for-loop that will iterate through 20 numbers (starting at 1 and ending 
 "Now serving 20."
 */
 
+for(var i = 0; i < 20; i++){
+  console.log('Now serving ' + (i + 1));
+}
+
 
 /* 2) Pop Charts
 Write a for-loop that will iterate through the topFive array below and console.log the following message:
@@ -22,6 +26,10 @@ This week's chart buster is: '24K Magic.'
 */
 
 var topFive = ["Closer", "Starboy", "I Feel It Coming", "Let Me Love You", "24K Magic"];
+
+for(var i = 0; i < topFive.length; i++){
+  console.log('This week\'s chart buster is: ' + topFive[i]);
+}
 
 
 /* 3) Dead Presidents

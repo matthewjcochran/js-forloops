@@ -278,6 +278,16 @@ Note, please use two for loops to complete this problem
 
 var guide = [["Honolulu", "Waikiki"], ["Tokyo", "Tsukiji Fish Market"], ["Cairo", "Pyramids"],["Rome", "Colosseum"]];
 
+function citySights(info){
+  for(var i = 0; i < info.length; i++){
+    for(var j = 0; j < info[i].length; j++){
+      console.log(info[i][j]);
+    }
+    console.log();
+  }
+}
+
+citySights(guide);
 
 
 /* 15) Back to School

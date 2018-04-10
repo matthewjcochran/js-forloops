@@ -181,6 +181,19 @@ Write a function named `copyArray` which takes two arguments: `originArray` and 
 Inside of this function write a for-loop that will iterate through the contents of the `originArray` and pushes each element of that array into `destinationArray`. Console.log your result.
 */
 
+var valuesArray = [99, 66, 829, 1941, 8, 76];
+var copyValuesArray = [];
+
+function copyArray(originArray, destinationArray){
+  for(var i = 0; i < originArray.length; i++){
+    destinationArray.push(originArray[i]);
+  }
+}
+
+copyArray(valuesArray, copyValuesArray);
+
+console.log(valuesArray);
+console.log(copyValuesArray);
 
 
 /*Final Boss*/
@@ -189,6 +202,26 @@ Inside of this function write a for-loop that will iterate through the contents 
 Declare a variable named `topQuote` and assign it to a String value of your favorite one line quote.
 Write a function that will iterate through the string value and return the longest word in that quote. Console.log your result.
 */
+
+var topQuote = 'It is not even wrong.'
+
+function stringToWords(str){
+  var noPunc = str.replace('.', '').replace('!', '').replace('?', '').replace(',', '');var words = noPunc.split(' ');
+  return words;
+}
+
+function getLongestWord(wordList){
+  var longestWord = wordList[0];
+  for(var i = 0; i < wordList.length; i++){
+    if(wordList[i].length > longestWord.length){
+      longestWord = wordList[i];
+    }
+  }
+  return longestWord;
+}
+
+var longWord = getLongestWord(stringToWords(topQuote));
+console.log(longWord);
 
 
 
@@ -200,6 +233,18 @@ Write a function named `generateArrayOfStrings` which takes a single argument `s
    @return Datatype: Array
 
 */
+
+var miscStorage = [ [], 'Carrots', 9, 'Beets', {}, {name: "Todd B."}, 'Mush' ];
+
+function generateArrayOfStrings(storage){
+  var strStorage = [];
+  for(var i = 0; i < storage.length; i++){
+    strStorage.push(storage[i].toString());
+  }
+  return strStorage;
+}
+
+console.log(generateArrayOfStrings(miscStorage));
 
 
 

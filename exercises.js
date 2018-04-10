@@ -103,7 +103,15 @@ Declare a variable named `oddSum` and assign it to the Number value 0.
 Write a for-loop that will sum up odd numbers to the `oddSum` variable. We want to add 50 odd numbers starting from 1.
 Console.log your results.
 */
-  
+
+var oddSum = 0;
+
+for(var i = 0; i < 50; i ++){
+  oddSum += 2*i + 1;
+}
+
+console.log(oddSum);
+
 
 /* 7) Oops There It is
 Declare a variable named `oopsArray` and assign its to the following array: `[ 'turn' , , 'down' , , 'for' , , 'what' ]`.
